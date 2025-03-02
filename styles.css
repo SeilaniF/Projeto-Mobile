@@ -1,0 +1,165 @@
+/* Resetando margens e preenchimentos padrão de todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    box-sizing: border-box;
+    color: #5D5D7D;
+}
+
+/* Definindo altura e largura total da tela para o wrapper */
+.wrapper {
+    height: 100vh;
+    width: 100vw;
+}
+
+/* Estilização do container da esquerda */
+.container-left {
+    display: inline-block; /* Mantém os elementos lado a lado */
+    width: 60%; /* Ocupa 60% da largura */
+    padding-left: 60px; /* Espaçamento interno à esquerda */
+    margin-top: 25%; /* Distância do topo */
+}
+
+/* Estilização do container da direita */
+.container-rigth {
+    display: inline-block;
+    background-color: rgba(93, 93, 125, 0.16); /* Cor de fundo com transparência */
+    height: 100vh; /* Altura total da tela */
+    width: 40%; /* Ocupa 40% da largura */
+    position: absolute; /* Posicionamento absoluto */
+}
+
+/* Estilizando a imagem */
+img {
+    position: relative;
+    top: 25%; /* Move a imagem para baixo */
+    right: 140px; /* Move a imagem para a esquerda */
+}
+
+/* Estilização do título principal */
+h1 {
+    font-size: 70px; /* Tamanho da fonte */
+    line-height: 80px; /* Espaçamento entre linhas */
+    width: 368px; /* Define a largura do título */
+}
+
+/* Estilização do parágrafo */
+p {
+    font-size: 28px;
+    line-height: 48px;
+    opacity: 0.6; /* Torna o texto um pouco transparente */
+    margin: 15PX 0;
+    width: 540px;
+}
+
+/* Estilização do botão */
+button {
+    width: 269px;
+    height: 62px;
+    background: #9499ea; /* Cor de fundo */
+    color: #FFFFFF; /* Cor do texto */
+    border: none;
+    border-radius: 30px; /* Bordas arredondadas */
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    cursor: pointer; /* Transforma o cursor em "mãozinha" */
+    box-shadow: 0px 10px 24px 0px #9499EA19; /* Sombra */
+}
+
+/* Efeito de hover no botão */
+button:hover {
+    opacity: 0.8;
+}
+
+/* Efeito ao clicar no botão */
+button:active {
+    opacity: 0.5;
+}
+
+/* Estilização dos links */
+a {
+    font-size: 28px;
+    line-height: 41px;
+    color: #5D5D7D;
+    margin-right: 41px; /* Distância entre os links */
+    cursor: pointer;
+}
+
+/* Opacidade reduzida para o segundo link */
+a:nth-child(2) {
+    opacity: 0.4;
+}
+
+/* Efeito ao passar o mouse sobre os links */
+a:hover {
+    opacity: 0.4;
+}
+
+/* Efeito ao clicar no link */
+a:active {
+    opacity: 0.8;
+}
+
+/* Estilização do cabeçalho */
+header {
+    margin: 24px 0 0 57px; /* Margem externa */
+}
+
+/* Responsividade para telas menores que 900px */
+/* Responsividade para telas menores que 900px */
+@media screen and (max-width:900px) {
+    .container-left {
+        width: 100%; /* Faz com que ocupe toda a largura da tela */
+        height: 50%; /* Ajusta a altura */
+        padding: 0; /* Remove preenchimento */
+        margin: 0; /* Remove margens */
+    }
+
+    .container-right { /* Corrigido de "rigth" para "right" */
+        display: block; /* Alinha os elementos em bloco */
+        height: auto; /* Ajusta a altura automaticamente */
+        width: 100%; /* Ocupa toda a largura disponível */
+        position: static; /* Remove posicionamento absoluto ou fixo */
+        padding: 40px; /* Adiciona espaçamento interno */
+    }
+
+    img {
+        position: static; /* Remove qualquer posição absoluta ou fixa */
+        width: 90%; /* Reduz a largura da imagem para melhor adaptação */
+    }
+
+    header {
+        display: none; /* Oculta o cabeçalho em telas menores */
+    }
+
+    h1 {
+        font-size: 36px; /* Diminui o tamanho do título */
+        line-height: 52px; /* Ajusta o espaçamento entre linhas */
+        width: auto; /* Ajusta a largura automaticamente */
+        margin: 58px 50px 0 50px; /* Define margens para centralização */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    p {
+        margin: 15px 40px; /* Define espaçamento ao redor do parágrafo */
+        width: auto; /* Ajusta a largura automaticamente */
+        text-align: center; /* Centraliza o texto */
+        font-size: 14px; /* Diminui o tamanho do texto */
+        line-height: 24px; /* Ajusta o espaçamento entre linhas */
+    }
+
+    button {
+        margin: 0 auto; /* Centraliza o botão horizontalmente */
+        display: block; /* Faz o botão ocupar toda a largura disponível */
+    }
+}
+
+/* Responsividade para telas menores que 320px */
+@media screen and (max-width:320px) {
+    .container-left {
+        width: 70%; /* Reduz a largura para evitar cortes em telas muito pequenas */
+    }
+}
