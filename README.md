@@ -1,6 +1,7 @@
 # Easy Shopping Via Mobile
 
 Este projeto é uma página web simples e responsiva criada com HTML e CSS. A página tem como objetivo demonstrar como pode ser fácil comprar via mobile, utilizando uma interface atraente e moderna. O design é limpo e focado em proporcionar uma boa experiência ao usuário.
+<img src="https://github.com/SeilaniF/Projeto-Mobile/blob/main/assets/Capturarmobile.PNG?raw=true">
 
 ## Estrutura do Projeto
 
